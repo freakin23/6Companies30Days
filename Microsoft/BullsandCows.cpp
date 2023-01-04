@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 #ifdef LOCAL
 #include "library/debug.cpp"
 #else

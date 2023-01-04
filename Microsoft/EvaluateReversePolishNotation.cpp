@@ -1,7 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+#ifdef LOCAL
+#include "library/debug.cpp"
+#else
+#define debug(...)
+#endif
+
+
 class Solution {
 public:
-    
-    int evalRPN(vector<string>& tokens) {
+int evalRPN(vector<string>& tokens) {
         stack<int>st;
         for(auto &t: tokens){
             if(t=="+" || t=="-" || t=="*" || t=="/"){
@@ -18,3 +26,11 @@ public:
         return st.top();
     }
 };
+
+#ifdef LOCAL
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    return 0;
+}
+#endif
